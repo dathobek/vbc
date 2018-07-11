@@ -1,0 +1,42 @@
+<div class="text-center">
+  <h2 class="jumbotron">V.B.C Participant Details</h2>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-sm table-hover">
+      <tr>
+         <th>NAMEs</th>
+         <th>ADDRESSES</th>
+         <th>GENDER</th>
+         <th>PHONE-NUMBER</th>
+         
+      </tr>
+      <tr *ngFor="let register of registerlist">
+    
+        <td>{{register.name}}</td>
+        <td>{{register.address}}</td> 
+        <td>{{register.gender}}</td>
+        <td>{{register.PhoneNumber}}</td>
+    
+        
+        <label>Tues</label>
+        <input type="checkbox" (click)="foo()" >
+        <label>Wed</label>
+        <input type="checkbox">
+        <label >Thurs</label>
+        <input type="checkbox">
+        <label>Fri</label>
+        <input type="checkbox">
+      </tr>
+      
+      
+    
+    </table>
+
+  </div>
+  <button class="btn btn-default" type="button" [routerLink]="['./register']">
+    <i class="fa fa-back"></i>
+    <--Back</button>
+
+
+</div>
