@@ -34,7 +34,9 @@ export class RegisterComponent implements OnInit {
        name : '',
        address : '',
        gender : '',
-       PhoneNumber : 0
+       PhoneNumber : 0,
+       daysAttended: []
+
     }
 
        }    
