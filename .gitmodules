@@ -1,0 +1,3 @@
+[submodule "vbc"]
+	path = vbc
+	url = https://github.com/dathobek/vbc
