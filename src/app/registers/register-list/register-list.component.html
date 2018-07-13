@@ -19,14 +19,46 @@
         <td>{{register.PhoneNumber}}</td>
     
         
-        <label>Tues</label>
-        <input type="checkbox" (click)="foo()" >
-        <label>Wed</label>
-        <input type="checkbox">
-        <label >Thurs</label>
-        <input type="checkbox">
-        <label>Fri</label>
-        <input type="checkbox">
+        <span *ngIf="checkIfDayExists(register, 'tues'); else tues">
+            <label>Tues</label>
+            <input type="checkbox" (click)="foo(register, 'tues')"
+            [checked]="true">
+        </span>
+        <ng-template #tues>
+            <label>Tues</label>
+            <input type="checkbox" (click)="foo(register, 'tues')"
+            [checked]="false">
+        </ng-template>
+        <span *ngIf="checkIfDayExists(register, 'wed'); else wed">
+            <label>Wed</label>
+            <input type="checkbox" (click)="foo(register, 'wed')"
+            [checked]="true">
+        </span>
+        <ng-template #wed>
+            <label>Wed</label>
+            <input type="checkbox" (click)="foo(register, 'wed')"
+            [checked]="false">
+        </ng-template>
+        <span *ngIf="checkIfDayExists(register, 'thurs'); else thurs">
+            <label>Thurs</label>
+            <input type="checkbox" (click)="foo(register, 'thurs')"
+            [checked]="true">
+        </span>
+        <ng-template #thurs>
+            <label>Thurs</label>
+            <input type="checkbox" (click)="foo(register, 'thurs')"
+            [checked]="false">
+        </ng-template>
+        <span *ngIf="checkIfDayExists(register, 'fri'); else fri">
+            <label>Fri</label>
+            <input type="checkbox" (click)="foo(register, 'fri')"
+            [checked]="true">
+        </span>
+        <ng-template #fri>
+            <label>Fri</label>
+            <input type="checkbox" (click)="foo(register, 'fri')"
+            [checked]="false">
+        </ng-template>
       </tr>
       
       

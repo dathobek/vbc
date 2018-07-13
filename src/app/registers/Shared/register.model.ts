@@ -4,4 +4,5 @@ export class Register {
     address: string;
     gender: string;
     PhoneNumber: number;
+    daysAttended: any[];
 }
