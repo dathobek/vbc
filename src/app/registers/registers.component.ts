@@ -9,7 +9,7 @@ import {RegisterService } from './Shared/register.service'
 })
 export class RegistersComponent implements OnInit {
 
-  constructor(private registerService: RegisterService) { }
+  constructor(public registerService: RegisterService) { }
 
   ngOnInit() {
   }

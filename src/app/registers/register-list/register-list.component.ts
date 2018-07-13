@@ -11,7 +11,7 @@ export class RegisterListComponent implements OnInit {
 
   registerlist: Register[];
   days: any[];
-  constructor(private registerService: RegisterService ) { }
+  constructor(public registerService: RegisterService ) { }
 
   ngOnInit() {
     var x = this.registerService.getData();
