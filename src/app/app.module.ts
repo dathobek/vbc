@@ -5,6 +5,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { ToastrModule } from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { RegistersComponent } from './registers/registers.component';
@@ -28,6 +30,8 @@ import { AppRoutingModule } from '../app-routing.module';
     AngularFireModule,
     AngularFirestoreModule,
     AppRoutingModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [RegisterService],
   bootstrap: [AppComponent]

@@ -9,7 +9,9 @@ export class RegisterService {
   registerlist: AngularFireList<any>;
   selectedregister: Register = new Register();
 
-  constructor(public firebase: AngularFireDatabase) { }
+  constructor(public firebase: AngularFireDatabase) { 
+    
+  }
 
   getData(){
     this.registerlist = this.firebase.list('Registered User');

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { RegisterService } from '../Shared/register.service';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register',
@@ -9,7 +10,9 @@ import { RegisterService } from '../Shared/register.service';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(public registerService: RegisterService) { }
+  constructor(public registerService: RegisterService,private tostr: ToastrService) { 
+   
+  }
 
   ngOnInit() {
     this.registerService.getData();
@@ -22,7 +25,7 @@ export class RegisterComponent implements OnInit {
      else
      this.registerService.updateData(registerForm.value) ;
      this.resetForm(registerForm); 
-     //this.tostr.success('Successfully Submitted','Employee Details')
+     this.tostr.success('Successfully Submitted','Employee Details')
 
        }
 
