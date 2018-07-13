@@ -31,14 +31,15 @@ export class RegisterService {
 
   //Updating data to FireBase Database
 
-  updateData( register: Register){
+  updateData( register) {
+    // console.log(register)
     this.registerlist.update(register.$key,
       {
         name:  register.name,
         address:  register.address,
         gender:  register.gender,
-        PhoneNumber:  register.PhoneNumber
-    
+        PhoneNumber:  register.PhoneNumber,
+        daysAttended: register.daysAttended
     });
   }
 
