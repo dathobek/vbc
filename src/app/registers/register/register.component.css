@@ -1,5 +1,13 @@
 .jumbotron {
-    color: rgba(150, 50, 150, 50);
-    background-color: black
+    color: black;
+    background-color: blue
     
 }
+
+.text-center h2{
+    font-size: 65px;
+    font-family: fantasy
+    
+}
+
+
