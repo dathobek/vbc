@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
      else
      this.registerService.updateData(registerForm.value) ;
      this.resetForm(registerForm); 
-     this.tostr.success('Successfully Submitted','Employee Details')
+     this.tostr.success('Successfully Submitted','Welcome To VBC')
 
        }
 
