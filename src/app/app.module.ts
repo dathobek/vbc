@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RouterModule} from '@angular/Router';
+import { RouterModule } from '@angular/Router';
 
 
 import { AppComponent } from './app.component';
