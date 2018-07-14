@@ -9,6 +9,11 @@ export class RegisterService {
   registerlist: AngularFireList<any>;
   selectedregister: Register = new Register();
 
+  public name = "";
+  public address = "";
+  public gender = "";
+  public PhoneNumber = "";
+
   constructor(public firebase: AngularFireDatabase) { 
     
   }

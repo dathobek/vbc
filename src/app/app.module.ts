@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import {AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import {environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { ToastrModule } from 'ngx-toastr';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterModule} from '@angular/Router';
+
 
 import { AppComponent } from './app.component';
 import { RegistersComponent } from './registers/registers.component';
@@ -20,7 +22,8 @@ import { AppRoutingModule } from '../app-routing.module';
     AppComponent,
     RegistersComponent,
     RegisterComponent,
-    RegisterListComponent
+    RegisterListComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AppRoutingModule } from '../app-routing.module';
     AngularFirestoreModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [RegisterService],
   bootstrap: [AppComponent]
